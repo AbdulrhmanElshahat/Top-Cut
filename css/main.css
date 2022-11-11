@@ -56,13 +56,34 @@ h3{
 .active{
     color: yellow;
 }
-  .about-us , .our-services, .our-work, .our-clients , footer{
-    margin-top: 100px;
+  .about-us , .our-services, .our-work, .our-clients {
+    padding-top: 100px;
+}
+.float-icon{
+    position: fixed;
+    left: 10px;
+    bottom: 100px;
+    background-color: #0dc143;
+    font-size: 41px;
+    padding: 0 8px;
+    border-radius: 10px;
+    animation: identifier 2s ease-in-out infinite;
+}
+@keyframes identifier {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 /* Home */
 .home{
-    margin-top: 98px;
-    height: 90vh;
+    
+    height: 100vh;
     background-image: url('../img/home/59ca1e5b435d2.jpeg');
     background-position: center;
     background-repeat: no-repeat;
@@ -223,6 +244,7 @@ header .fa-bars{
 footer{
     background-color: #111 !important;
     padding: 30px 0 ;
+    margin-top: 100px;
 }
 footer .container {
     display: flex;
