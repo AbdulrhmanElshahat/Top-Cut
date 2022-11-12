@@ -17,7 +17,6 @@ menuItems.click(function(){
         }
     }, 800);
 })
-=======
 
 if(thePathName ==='/Top-Cut' || thePathName === '/index.html'){
     menuItems.click(function(e){
