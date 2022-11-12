@@ -7,6 +7,7 @@ let menuBtn = $('header .fa-bars'),
 menuBtn.click(function(){
     menu.slideToggle()
 })
+<<<<<<< HEAD
 menuItems.click(function(){
     setTimeout(() => {
        menuItems.removeClass('active')
@@ -16,6 +17,37 @@ menuItems.click(function(){
         }
     }, 800);
 })
+=======
+
+if(thePathName ==='/Top-Cut' || thePathName === '/index.html'){
+    menuItems.click(function(e){
+        setTimeout(() => {
+            menuItems.removeClass('active')
+            $(this).addClass('active')
+            if(window.innerWidth<=768){
+                menu.slideUp()
+            }
+        }, 1000);
+    })
+    
+    $(window).scroll(function(){
+        let y = window.scrollY,
+            mainSectionsArr = Array.from(mainSections)
+                let z = mainSectionsArr.filter(e=> $(e).offset().top <= y && ($(e).offset().top + $(e).innerHeight()) >= y + 10)
+                menuItems.removeClass('active')
+              $(`a[href="#${$(z[0]).attr('id')}"`).addClass('active')
+    })
+
+    scrollInto(menuItems)
+}
+if(thePathName === '/works.html'){
+    window.scrollTo(0 , $('.our-work').offset().top)
+}
+if(thePathName === '/service.html'){
+    window.scrollTo(0 , $('.our-services').offset().top)
+}
+
+>>>>>>> 6676ac5ef1e569c7b6c88969b1c104999cbc5926
 
 function scrollInto(elements){
     let arr = Array.from(elements)
