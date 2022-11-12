@@ -7,7 +7,6 @@ let menuBtn = $('header .fa-bars'),
 menuBtn.click(function(){
     menu.slideToggle()
 })
-<<<<<<< HEAD
 menuItems.click(function(){
     setTimeout(() => {
        menuItems.removeClass('active')
@@ -46,7 +45,6 @@ if(thePathName === '/service.html'){
     window.scrollTo(0 , $('.our-services').offset().top)
 }
 
->>>>>>> 6676ac5ef1e569c7b6c88969b1c104999cbc5926
 
 function scrollInto(elements){
     let arr = Array.from(elements)
