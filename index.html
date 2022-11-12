@@ -185,5 +185,18 @@
     <a href="https://wa.me/message/GHKTW4ROTJSLC1" class="float-icon"><i class="fa-brands fa-whatsapp"></i></a>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+
+    $(window).scroll(function(){
+        let y = window.scrollY,
+            mainSectionsArr = Array.from(mainSections)
+            mainSectionsArr.push($('footer'))
+                let z = mainSectionsArr.filter(e=> $(e).offset().top <= y && ($(e).offset().top + $(e).innerHeight()) >= y + 10)
+                menuItems.removeClass('active')
+              $(`a[href="#${$(z[0]).attr('id')}"`).addClass('active')
+    })
+
+    scrollInto(menuItems)
+    </script>
   </body>
 </html>

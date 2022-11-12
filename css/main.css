@@ -64,8 +64,12 @@ h3{
     left: 10px;
     bottom: 100px;
     background-color: #0dc143;
-    font-size: 41px;
-    padding: 0 8px;
+    font-size: 40px;
+    display: flex;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     animation: identifier 2s ease-in-out infinite;
 }
