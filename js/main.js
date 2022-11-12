@@ -8,7 +8,7 @@ menuBtn.click(function(){
     menu.slideToggle()
 })
 
-if(thePathName ==='/' || thePathName === '/index.html'){
+if(thePathName ==='/Top-Cut' || thePathName === '/index.html'){
     menuItems.click(function(e){
         setTimeout(() => {
             menuItems.removeClass('active')
